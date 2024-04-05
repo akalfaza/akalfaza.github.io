@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> 2 Designers Timeline | Alara Kalfazade </title>
+    <link rel="stylesheet" href="./iterative-design.css">
+    <script src="https://kit.fontawesome.com/67e5d0119e.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="./pics/favicon-196x196.png" sizes="196x196" />
+    <link href="https://fonts.cdnfonts.com/css/cabinet-grotesk" rel="stylesheet">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/cabinet-grotesk');
+
+        .myImg {
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .myImg:hover {
+            opacity: 0.7;
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.9);
+            /* Black w/ opacity */
+        }
+
+        /* Modal Content (image) */
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+
+        /* Caption of Modal Image */
+        #caption {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: #ccc;
+            padding: 10px 0;
+            height: 150px;
+        }
+
+        /* Add Animation */
+        .modal-content,
+        #caption {
+            -webkit-animation-name: zoom;
+            -webkit-animation-duration: 0.6s;
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
+
+        @-webkit-keyframes zoom {
+            from {
+                -webkit-transform: scale(0)
+            }
+
+            to {
+                -webkit-transform: scale(1)
+            }
+        }
+
+        @keyframes zoom {
+            from {
+                transform: scale(0)
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
+
+        /* The Close Button */
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* 100% Image Width on Smaller Screens */
+        @media only screen and (max-width: 700px) {
+            .modal-content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- CURSOR -->
+    <div id="trailer">
+        <svg id="trailer-icon" class="arrow-up-right" style="fill: #ffffff;" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24">
+            <path style="fill: #ffffff;"
+                d="M8.5,18.31L5.69,15.5L12.06,9.12H7.11V5.69H18.31V16.89H14.89V11.94L8.5,18.31Z" />
+        </svg>
+    </div>
+
+    <!-- NAVIGATION -->
+    <div id="header">
+        <div class="container">
+            <nav class="nav-bar">
+                <a class="name" href="./index.html">Alara Kalfazade</a>
+                <ul id="menu">
+                    <li><a href="./work.html">Work</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./resume.pdf" target="_blank">Resume</a></li>
+                    <i class="fas fa-times" onclick="closenav()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="opennav()"></i>
+            </nav>
+        </div>
+    </div>
+
+    <img class="container" src="./pics/timeline/timeline.gif" style="width:60%; display: block; margin-left: auto; margin-right: auto;" alt="Timeline Presentation">
+
+    <div id="part">
+        <div class="row">
+
+            <!--HEAD-->
+            <div class="container">
+                <div class="text">
+                    <h1 class="assignment-title">2 Designers Timeline</h1>
+                    <div class="info-row">
+                        <div class="info-col">
+                            <strong class="info-col-title">Team:</strong>
+                            <div class="info">
+                                <p>Individual</p>
+                            </div>
+                        </div>
+                        <div class="info-col">
+                            <strong class="info-col-title">Role:</strong>
+                            <div class="info">
+                                <p>Graphic Designer & Author</p>
+                            </div>
+
+                        </div>
+
+                        <div class="info-col">
+                            <strong class="info-col-title">Timeline:</strong>
+                            <div class="info">
+                                <p>October - December 2023</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- INTRO -->
+            <div class="introduction">
+                <div class="line">
+                    <div class="container" style="padding-top: 0; padding-bottom: 0;">
+                        <hr style="border: 0px solid #bbbbbb7e; border-top-width: 1px;">
+                    </div>
+                </div>
+                <div class="container">
+                    <p class="introduction-parag">In my senior year of Brown University, I took the course History of
+                        Graphic Design taught by Doug Scott
+                        at Rhode Island School of Design (RISD).
+                    </p>
+                    <p class="introduction-parag">
+                        For the final project of History of Graphic Design,
+                        we were assigned to create an accordion fold booklet that introduced
+                        the lives and careers of two notable designers. Additionally, we were asked to include other
+                        important landmarks in world
+                        and art/design history to help understand the world they worked in. Our first designer was
+                        preassigned by Doug and the
+                        second designer was chosen by the student. I was given Valentina Kulagina and chose Jonathan
+                        Barnbrook as my second designer to research his career.
+                    </p>
+                    <p class="introduction-parag">
+                        The final booklet features 25 pages covering world history and graphic design from the early
+                        20th century to the present day.
+                        When laid out, the book spreads to over 22 feet long. The book features a color coded
+                        system: orange colored text covers
+                        Valentina Kulagina's life, pink colored text covers Jonathan Barnbrook's life, and grey colored text covers
+                        world, art, and graphic design history.
+                        The booklet designed using Adobe Indesign. Printed the booklet using PrimeLink Printer on coated paper and
+                        assembled using sensitive skin paper tape from CVS.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="part">
+        <div class="line">
+            <div class="container" style="padding-top: 0; padding-bottom: 0;">
+                <hr style="border: 0px solid #bbbbbb7e; border-top-width: 1px;">
+            </div>
+        </div>
+        <!-- CONDUCTING TESTS -->
+        <div class="container" style="background: #bbbbbb35; margin-top: 100px;">
+            <div class="row">
+                <div class="part-1-col-1">
+
+                    <div class="work-image">
+                        <img class="myImg" src="./pics/timeline/2DT Final_Page_01.jpg"
+                            style="margin-top: 0; margin-right: 0px; width: 50%;" alt="Version A's Eye Tracking">
+                        <img class="myImg" src="./pics/timeline/2DT Final_Page_02.jpg"
+                            style="margin-top: 0; margin-right: 0px; width: 50%;" alt="Version A's Eye Tracking">
+                    </div>
+
+                    <div class="work-image">
+                        <img class="myImg" src="./pics/timeline/2DT Final_Page_03.jpg"
+                            style="margin-top: 0; margin-right: 0px; width: 50%;" alt="Version A's Eye Tracking">
+                        <img class="myImg" src="./pics/timeline/2DT Final_Page_04.jpg"
+                            style="margin-top: 0; margin-right: 0px; width: 50%;" alt="Version A's Eye Tracking">
+                    </div>
+
+                    <div class="work-image">
+                        <img class="myImg" src="./pics/timeline/2DT Final_Page_05.jpg"
+                            style="margin-top: 0; margin-right: 0px; width: 50%;" alt="Version A's Eye Tracking">
+                        <img class="myImg" src="./pics/timeline/2DT Final_Page_06.jpg"
+                            style="margin-top: 0; margin-right: 0px; width: 50%;" alt="Version A's Eye Tracking">
+                    </div>
+
+                    <div class="work-image">
+                        <img class="myImg" src="./pics/timeline/2DT Final_Page_07.jpg"
+                            style="margin-top: 0; margin-right: 0px; width: 50%;" alt="Version A's Eye Tracking">
+                        <img class="myImg" src="./pics/timeline/2DT Final_Page_08.jpg"
+                            style="margin-top: 0; margin-right: 0px; width: 50%;" alt="Version A's Eye Tracking">
+                    </div>
+
+                    <div class="work-image">
+                        <img class="myImg" src="./pics/timeline/2DT Final_Page_09.jpg"
+                            style="margin-top: 0; margin-right: 0px; width: 50%;" alt="Version A's Eye Tracking">
+                        <img class="myImg" src="./pics/timeline/2DT Final_Page_10.jpg"
+                            style="margin-top: 0; margin-right: 0px; width: 50%;" alt="Version A's Eye Tracking">
+                    </div>
+
+                    <div class="work-image">
+                        <img class="myImg" src="./pics/timeline/2DT Final_Page_11.jpg"
+                            style="margin-top: 0; margin-right: 0px; width: 50%;" alt="Version A's Eye Tracking">
+                        <img class="myImg" src="./pics/timeline/2DT Final_Page_12.jpg"
+                            style="margin-top: 0; margin-right: 0px; width: 50%;" alt="Version A's Eye Tracking">
+                    </div>
+
+                    <div class="work-image">
+                        <img class="myImg" src="./pics/timeline/2DT Final_Page_13.jpg"
+                            style="margin-top: 0; margin-right: 0px; width: 50%;" alt="Version A's Eye Tracking">
+                        <img class="myImg" src="./pics/timeline/2DT Final_Page_14.jpg"
+                            style="margin-top: 0; margin-right: 0px; width: 50%;" alt="Version A's Eye Tracking">
+                    </div>
+
+                    <div class="work-image">
+                        <img class="myImg" src="./pics/timeline/2DT Final_Page_15.jpg"
+                            style="margin-top: 0; margin-right: 0px; width: 50%;" alt="Version A's Eye Tracking">
+                        <img class="myImg" src="./pics/timeline/2DT Final_Page_16.jpg"
+                            style="margin-top: 0; margin-right: 0px; width: 50%;" alt="Version A's Eye Tracking">
+                    </div>
+
+                    <div class="work-image">
+                        <img class="myImg" src="./pics/timeline/2DT Final_Page_17.jpg"
+                            style="margin-top: 0; margin-right: 0px; width: 50%;" alt="Version A's Eye Tracking">
+                        <img class="myImg" src="./pics/timeline/2DT Final_Page_18.jpg"
+                            style="margin-top: 0; margin-right: 0px; width: 50%;" alt="Version A's Eye Tracking">
+                    </div>
+
+                    <div class="work-image">
+                        <img class="myImg" src="./pics/timeline/2DT Final_Page_19.jpg"
+                            style="margin-top: 0; margin-right: 0px; width: 50%;" alt="Version A's Eye Tracking">
+                        <img class="myImg" src="./pics/timeline/2DT Final_Page_20.jpg"
+                            style="margin-top: 0; margin-right: 0px; width: 50%;" alt="Version A's Eye Tracking">
+                    </div>
+
+                    <div class="work-image">
+                        <img class="myImg" src="./pics/timeline/2DT Final_Page_21.jpg"
+                            style="margin-top: 0; margin-right: 0px; width: 50%;" alt="Version A's Eye Tracking">
+                        <img class="myImg" src="./pics/timeline/2DT Final_Page_22.jpg"
+                            style="margin-top: 0; margin-right: 0px; width: 50%;" alt="Version A's Eye Tracking">
+                    </div>
+
+                    <div class="work-image">
+                        <img class="myImg" src="./pics/timeline/2DT Final_Page_23.jpg"
+                            style="margin-top: 0; margin-right: 0px; width: 50%;" alt="Version A's Eye Tracking">
+                        <img class="myImg" src="./pics/timeline/2DT Final_Page_24.jpg"
+                            style="margin-top: 0; margin-right: 0px; width: 50%;" alt="Version A's Eye Tracking">
+                    </div>
+
+                    <div class="work-image">
+                        <img class="myImg" src="./pics/timeline/2DT Final_Page_25.jpg"
+                            style="margin-top: 0; margin-right: 0px; width: 50%;" alt="Version A's Eye Tracking">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <!-- <div id="caption"></div> -->
+    </div>
+
+    <div class="line">
+        <div class="container" style="padding-top: 100px; padding-bottom: 0;">
+            <hr style="border: 0px solid #bbbbbb7e; border-top-width: 1px;">
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <h4 class="footer-name">Alara Kalfazade</h4>
+            <div class="footer-row">
+                <div class="footer-col">
+                    <ul class="footer-list">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./work.html">Work</a></li>
+                        <li><a href="./about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul class="footer-list">
+                        <li><a href="./resume.pdf" target="_blank">Resume</a></li>
+                        <li><a href="https://www.linkedin.com/in/alara-kalfazade-bba247237/"
+                                target="_blank">Linkedin</a></li>
+                        <li><a href="mailto:alara_kalfazade@brown.edu" target="_blank">E-mail</a></li>
+                    </ul>
+                </div>
+            </div>
+            <h4 class="coded-by-me">Coded by me :)</h4>
+        </div>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementsByClassName("myImg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        for (var i = 0; i < img.length; i++) {
+            img[i].onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                // captionText.innerHTML = this.alt;
+            }
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        var menu = document.getElementById("menu");
+
+        function opennav() {
+            menu.style.width = "100%";
+        }
+        function closenav() {
+            menu.style.width = "0%";
+        }
+
+        const trailer = document.getElementById("trailer");
+
+        const animateTrailer = (e, interacting) => {
+            const x = e.clientX - trailer.offsetWidth / 2,
+                y = e.clientY - trailer.offsetHeight / 2;
+
+            const keyframes = {
+                transform: `translate(${x}px, ${y}px)scale(${interacting ? 8 : 1})`
+            };
+
+            trailer.animate(keyframes, {
+                duration: 800,
+                fill: "forwards"
+            });
+        }
+
+        window.onmousemove = e => {
+            const interactable = e.target.closest(".interactable"),
+                interacting = interactable !== null;
+
+            const icon = document.getElementById("trailer-icon");
+
+            animateTrailer(e, interacting);
+
+            trailer.dataset.type = interacting ? interactable.dataset.type : "";
+
+            if (interacting) {
+                icon.className = "arrow-up-right";
+            }
+        }
+    </script>
+
+</body>
+
+
+</html>
