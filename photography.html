@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Photography | Alara Kalfazade </title>
+    <link rel="stylesheet" href="./limon.css">
+    <script src="https://kit.fontawesome.com/67e5d0119e.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="./pics/favicon-196x196.png" sizes="196x196" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        @font-face {
+            font-display: block;
+            font-family: Favorit;
+            src: url("font/FavoritVariableRegular.woff2") format("woff2-variations");
+            font-style: normal;
+            font-weight: 300 700;
+        }
+
+        * {
+            font-family: Favorit;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+
+        /* Tablet */
+        @media (max-width: 1023px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 767px) {
+            .gallery-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <div id="header">
+        <div class="container">
+            <nav class="nav-bar">
+                <a class="name" href="./index.html">Alara Kalfazade</a>
+                <ul id="menu">
+                    <li><a href="./index.html#portfolio" onclick="closenav()">Work</a></li>
+                    <li><a href="./photography.html">Photography</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./Resume.pdf" target="_blank">Resume</a></li>
+                    <i class="fas fa-times" id="close-icon" onclick="closenav()"></i>
+                </ul>
+                <i class="fas fa-bars" id="hamburger-icon" onclick="opennav()"></i>
+            </nav>
+        </div>
+    </div>
+
+    <!--PROJECT INFORMATION-->
+    <div class="project-info">
+        <div class="container">
+            <h2 class="project-title" style="color: #1A1B1F; font-size: 34px; font-weight: 400;">Photography</h2>
+        </div>
+    </div>
+
+
+    <!-- GALLERY -->
+    <div class="gallery">
+        <div class="container">
+            <div class="gallery-grid">
+                <img src="./pics/photography/1.jpg" alt="Limon Page" class="gallery-img">
+                <img src="./pics/photography/2.jpg" alt="Limon Page" class="gallery-img">
+                <img src="./pics/photography/3.jpg" alt="Limon Page" class="gallery-img">
+                <img src="./pics/photography/4.jpg" alt="Limon Page" class="gallery-img">
+                <img src="./pics/photography/5.jpg" alt="Limon Page" class="gallery-img">
+                <img src="./pics/photography/6.jpg" alt="Limon Page" class="gallery-img">
+                <img src="./pics/photography/7.jpg" alt="Limon Page" class="gallery-img">
+                <img src="./pics/photography/8.jpg" alt="Limon Page" class="gallery-img">
+                <img src="./pics/photography/9.jpg" alt="Limon Page" class="gallery-img">
+                <img src="./pics/photography/10.jpg" alt="Limon Page" class="gallery-img">
+                <img src="./pics/photography/11.jpg" alt="Limon Page" class="gallery-img">
+                <img src="./pics/photography/12.jpg" alt="Limon Page" class="gallery-img">
+                <img src="./pics/photography/13.jpg" alt="Limon Page" class="gallery-img">
+                <img src="./pics/photography/15.jpg" alt="Limon Page" class="gallery-img">
+                <img src="./pics/photography/16.jpg" alt="Limon Page" class="gallery-img">
+                <img src="./pics/photography/17.jpg" alt="Limon Page" class="gallery-img">
+                <img src="./pics/photography/18.jpg" alt="Limon Page" class="gallery-img">
+                <img src="./pics/photography/19.jpg" alt="Limon Page" class="gallery-img">
+                <img src="./pics/photography/14.jpg" alt="Limon Page" class="gallery-img">
+                <img src="./pics/photography/20.jpg" alt="Limon Page" class="gallery-img">
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL STRUCTURE FOR GALLERY -->
+    <div id="galleryModal" class="modal">
+        <span class="close-gallery">&times;</span>
+        <img class="modal-content" id="galleryModalImg">
+        <span class="modal-prev">&#10094;</span>
+        <span class="modal-next">&#10095;</span>
+    </div>
+
+
+    <div class="line">
+        <div class="container" style="padding-top: 28px; padding-bottom: 0;">
+            <hr style="border: 0px solid #bbbbbb7e; border-top-width: 1px;">
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <h4 class="footer-name">Alara Kalfazade</h4>
+            <div class="footer-row">
+                <div class="footer-col">
+                    <ul class="footer-list">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./index.html#portfolio">Work</a></li>
+                        <li><a href="./about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul class="footer-list">
+                        <li><a href="./Resume.pdf" target="_blank">Resume</a></li>
+                        <li><a href="https://www.linkedin.com/in/alara-kalfazade-bba247237/"
+                                target="_blank">Linkedin</a></li>
+                        <li><a href="mailto:alarakalfazade@gmail.com" target="_blank">E-mail</a></li>
+                    </ul>
+                </div>
+            </div>
+            <h4 class="coded-by-me">Coded by me :) Google Chrome is suggested.</h4>
+        </div>
+    </div>
+
+    <script>
+        // GALLERY MODAL
+        let galleryModalCurrentIndex = 0;
+        const galleryModal = document.getElementById("galleryModal");
+        const galleryModalImg = document.getElementById("galleryModalImg");
+        const galleryClose = document.querySelector(".close-gallery");
+        const galleryPrev = galleryModal.querySelector(".modal-prev");
+        const galleryNext = galleryModal.querySelector(".modal-next");
+        const galleryImages = document.querySelectorAll(".gallery-img");
+
+        // Open modal on gallery image click
+        galleryImages.forEach((img, index) => {
+            img.addEventListener("click", () => {
+                galleryModal.style.display = "block";
+                galleryModalImg.src = img.src;
+                galleryModalCurrentIndex = index;
+            });
+        });
+
+        // Close modal
+        galleryClose.onclick = () => {
+            galleryModal.style.display = "none";
+        };
+
+        // Close on click outside image
+        window.addEventListener("click", (e) => {
+            if (e.target === galleryModal) {
+                galleryModal.style.display = "none";
+            }
+        });
+
+        // Navigate previous
+        galleryPrev.onclick = () => {
+            galleryModalCurrentIndex = (galleryModalCurrentIndex - 1 + galleryImages.length) % galleryImages.length;
+            galleryModalImg.src = galleryImages[galleryModalCurrentIndex].src;
+        };
+
+        // Navigate next
+        galleryNext.onclick = () => {
+            galleryModalCurrentIndex = (galleryModalCurrentIndex + 1) % galleryImages.length;
+            galleryModalImg.src = galleryImages[galleryModalCurrentIndex].src;
+        };
+
+        // NAVIGATION MENU
+        var menu = document.getElementById("menu");
+
+        function opennav() {
+            menu.classList.add("mobile-open");
+            document.body.classList.add("menu-open");
+        }
+        function closenav() {
+            menu.classList.remove("mobile-open");
+            document.body.classList.remove("menu-open");
+        }
+    </script>
+
+</body>
+
+
+</html>

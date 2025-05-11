@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Memoir of My Childhood | Alara Kalfazade </title>
+    <link rel="stylesheet" href="./limon.css">
+    <script src="https://kit.fontawesome.com/67e5d0119e.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="./pics/favicon-196x196.png" sizes="196x196" />
+    <link href="https://fonts.cdnfonts.com/css/cabinet-grotesk" rel="stylesheet">
+    <style>
+        @font-face {
+            font-display: block;
+            font-family: Favorit;
+            src: url("font/FavoritVariableRegular.woff2") format("woff2-variations");
+            font-style: normal;
+            font-weight: 300 700;
+        }
+
+        * {
+            font-family: Favorit;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <div id="header">
+        <div class="container">
+            <nav class="nav-bar">
+                <a class="name" href="./index.html">Alara Kalfazade</a>
+                <ul id="menu">
+                    <li><a href="./index.html#portfolio" onclick="closenav()">Work</a></li>
+                    <li><a href="./photography.html">Photography</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./Resume.pdf" target="_blank">Resume</a></li>
+                    <i class="fas fa-times" id="close-icon" onclick="closenav()"></i>
+                </ul>
+                <i class="fas fa-bars" id="hamburger-icon" onclick="opennav()"></i>
+            </nav>
+        </div>
+    </div>
+
+    <img class="container" src="./pics/childhood-poetry/poetry.gif"
+        style="width:60%; display: block; margin-left: auto; margin-right: auto;" alt="Timeline Presentation">
+
+      
+    <!--PROJECT INFORMATION-->
+    <div class="project-info">
+        <div class="container">
+            <h2 class="project-title" style="color: #1A1B1F; font-size: 34px; font-weight: 400;">Memoir of My Childhood</h2>
+            <div class="info-row">
+                <div class="info-col">
+                    <h3 class="info-col-title">Role:</h3>
+                    <p>Graphic Designer & Author</p>
+                </div>
+
+                <div class="info-col">
+                    <h3 class="info-col-title">Timeline:</h3>
+                    <p>February 2024</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="line">
+        <div class="container" style="padding-top: 0; padding-bottom: 0;">
+            <hr style="border: 0px solid #bbbbbb7e; border-top-width: 1px;">
+        </div>
+    </div>
+
+    <!-- DESCRIPTION -->
+    <div class="description">
+        <div class="container">
+            <div class="paragraph-container">
+                <p class="paragraph">I created a website of an interactive poetry
+                    consisting of words, phrases, questions, and images that remind me of my childhood.
+                    The website allows the user to move every item on the website to create their own poem.
+                    The words and images are randomly placed each time the website refreshes.
+                </p>
+                <p class="paragraph">
+                    With this project, I utilized my expertise in web development, graphic design,
+                    and language arts, resulting in a fusion of creativity and technical proficiency.
+                    I see these disciplines as interconnected in
+                    the way that they allow me to play with text and images.
+                </p>
+                <p class="paragraph">
+                    The website can be tried at <a href="https://akalfaza.github.io/poetry-collage/"
+                        target="_blank">https://akalfaza.github.io/poetry-collage/</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="line">
+        <div class="container" style="padding-top: 28px; padding-bottom: 0;">
+            <hr style="border: 0px solid #bbbbbb7e; border-top-width: 1px;">
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <h4 class="footer-name">Alara Kalfazade</h4>
+            <div class="footer-row">
+                <div class="footer-col">
+                    <ul class="footer-list">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./index.html#portfolio">Work</a></li>
+                        <li><a href="./about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul class="footer-list">
+                        <li><a href="./Resume.pdf" target="_blank">Resume</a></li>
+                        <li><a href="https://www.linkedin.com/in/alara-kalfazade-bba247237/"
+                                target="_blank">Linkedin</a></li>
+                        <li><a href="mailto:alarakalfazade@gmail.com" target="_blank">E-mail</a></li>
+                    </ul>
+                </div>
+            </div>
+            <h4 class="coded-by-me">Coded by me :) Google Chrome is suggested.</h4>
+        </div>
+    </div>
+
+    <script>
+        // NAVIGATION MENU
+        var menu = document.getElementById("menu");
+
+        function opennav() {
+            menu.classList.add("mobile-open");
+            document.body.classList.add("menu-open");
+        }
+        function closenav() {
+            menu.classList.remove("mobile-open");
+            document.body.classList.remove("menu-open");
+        }
+    </script>
+
+</body>
+
+
+</html>

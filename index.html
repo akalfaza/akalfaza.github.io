@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Home | Alara Kalfazade </title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/67e5d0119e.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="./pics/favicon-196x196.png" sizes="196x196" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        @font-face {
+            font-display: block;
+            font-family: Favorit;
+            src: url("font/FavoritVariableRegular.woff2") format("woff2-variations");
+            font-style: normal;
+            font-weight: 300 700;
+        }
+
+        * {
+            font-family: Favorit;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <div id="header">
+        <div class="container">
+            <nav class="nav-bar">
+                <a class="name" href="./index.html">Alara Kalfazade</a>
+                <ul id="menu">
+                    <li><a href="#portfolio" onclick="closenav()">Work</a></li>
+                    <li><a href="./photography.html">Photography</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./Resume.pdf" target="_blank">Resume</a></li>
+                    <i class="fas fa-times" id="close-icon" onclick="closenav()"></i>
+                </ul>
+                <i class="fas fa-bars" id="hamburger-icon" onclick="opennav()"></i>
+            </nav>
+            <div class="text">
+                <h1>Hi there, I'm Alara, a visual designer & developer passionate about crafting clean, minimalist, and
+                    enjoyable user experiences.</h1>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="line">
+        <div class="container" style="padding-top: 0; padding-bottom: 0;">
+            <hr style="border: 0px solid #bbbbbb7e; border-top-width: 1px;">
+        </div>
+    </div>
+
+
+    <!----portfolio/work section-->
+    <div id="portfolio">
+        <div class="container">
+            <h2 style="color: #1A1B1F; font-size: 34px; font-weight: 400;">Selected Work</h2>
+            <!-- Filter buttons -->
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')">All</button>
+                <button class="btn" onclick="filterSelection('uiux')">UI/UX</button>
+                <button class="btn" onclick="filterSelection('publication')">Publication</button>
+                <button class="btn" onclick="filterSelection('brand')">Brand Identity</button>
+                <button class="btn" onclick="filterSelection('webdevelopment')">Web Development</button>
+            </div>
+
+            <!-- DMOBILITY -->
+            <div class="work-container filterDiv uiux">
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slide"><img src="./pics/dmobility/dmobility-macbook-mockup.jpg" alt="Image 1"></div>
+                        <div class="slide"><img src="./pics/dmobility/dmobility-iphone-mockup.jpg" alt="Image 2"></div>
+                        <div class="slide"><img src="./pics/dmobility/mockup-laptop-mobile.jpg" alt="Image 2"></div>
+                        <div class="slide"><img src="./pics/dmobility/mobile-screens.jpg" alt="Image 2"></div>
+                        <div class="slide"><img src="./pics/dmobility/dmobility-presentation.jpg" alt="Image 2"></div>
+                    </div>
+                    <button class="prev">&#10094;</button>
+                    <button class="next">&#10095;</button>
+                </div>
+                <!-- project title and details -->
+                <div class="work-text">
+                    <h3>D-Mobility</h3>
+                    <h4>Website Design</h4>
+                    <p>I.............</p>
+                    <div class="button-container"
+                        style="display:flex; flex-direction:column; align-items:flex-start; gap:12px;">
+                        <a class="view-project-link" data-type="link" href="./desing-for-dmobility.html">View
+                            Project<span class="arrow">→</span></a>
+                        <a class="view-project-link" data-type="link" target="_blank"
+                            href="https://dogusmobilityservices.com.tr/">Go to Website<span
+                                class="arrow">→</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line">
+                <div class="container" style="padding-top: 0; padding-bottom: 0;">
+                    <hr style="border: 0px solid #bbbbbb7e; border-top-width: 1px;">
+                </div>
+            </div>
+
+            <!-- VDF -->
+            <!-- <div class="work-container filterDiv uiux">
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slide"><img src="./pics/home-page/bonno-presentation.jpg" alt="Image 1"></div>
+                        <div class="slide"><img src="./pics/home-page/bonno-presentation.jpg" alt="Image 2"></div>
+                        <div class="slide"><img src="./pics/home-page/bonno-presentation.jpg" alt="Image 3"></div>
+                    </div>
+                    <button class="prev">&#10094;</button>
+                    <button class="next">&#10095;</button>
+                </div>
+
+                <div class="work-text">
+                    <h3>Redesign for VDF Insurance</h3>
+                    <h4>Website Design</h4>
+                    <p>I.............
+                    </p>
+                    <div class="button-container"
+                        style="display:flex; flex-direction:column; align-items:flex-start; gap:12px;">
+                        <a class="view-project-link" data-type="link" href="./desing-for-dmobility.html">View
+                            Project<span class="arrow">→</span></a>
+                        <a class="view-project-link" data-type="link" target="_blank"
+                            href="https://akalfaza.github.io/poetry-collage/">Go to Website<span
+                                class="arrow">→</span></a>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- <div class="line">
+                <div class="container" style="padding-top: 0; padding-bottom: 0;">
+                    <hr style="border: 0px solid #bbbbbb7e; border-top-width: 1px;">
+                </div>
+            </div> -->
+
+            <!-- KONYA -->
+            <div class="work-container filterDiv publication">
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slide"><img src="./pics/where-we-sat-together/Where We Sat Together_1.jpg"
+                                alt="Image 1"></div>
+                        <div class="slide"><img src="./pics/where-we-sat-together/Where We Sat Together_2.jpg"
+                                alt="Image 2"></div>
+                        <div class="slide"><img src="./pics/where-we-sat-together/12.jpg" alt="Image 3"></div>
+                    </div>
+                    <button class="prev">&#10094;</button>
+                    <button class="next">&#10095;</button>
+                </div>
+                <!-- project title and details -->
+                <div class="work-text">
+                    <h3>Where We Sat Together</h3>
+                    <h4>Book Design</h4>
+                    <p>I explored memory, home, and familial connections in Konya, Turkey, 
+                        where my parents grew up and my grandparents still live. I designed, 
+                        printed, and bound the book myself.
+                    </p>
+                    <a class="view-project-link" data-type="link" href="./where-we-sat-together.html">View Project<span
+                            class="arrow">→</span></a>
+                </div>
+            </div>
+
+            <div class="line">
+                <div class="container" style="padding-top: 0; padding-bottom: 0;">
+                    <hr style="border: 0px solid #bbbbbb7e; border-top-width: 1px;">
+                </div>
+            </div>
+
+            <!-- BONNO -->
+            <div class="work-container filterDiv uiux brand">
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slide"><img src="./pics/bonno/Bonno-website.gif"
+                                alt="Bonno's E-Commerce Website Design"></div>
+                        <div class="slide"><img src="./pics/bonno/Box & Products 1.jpg" alt="Box & Products"></div>
+                        <div class="slide"><img src="./pics/bonno/bonno-presentation.jpg" alt="Products & Tag"></div>
+                        <div class="slide"><img src="./pics/bonno/cards.jpg" alt="Cards"></div>
+                        <div class="slide"><img src="./pics/bonno/Products.jpg" alt="Products"></div>
+                    </div>
+                    <button class="prev">&#10094;</button>
+                    <button class="next">&#10095;</button>
+                </div>
+                <!-- project title and details -->
+                <div class="work-text">
+                    <h3>Bonno</h3>
+                    <h4>Website Design | Brand Identity Design | Product Photography</h4>
+                    <p>Introducing Bonno, a refined Turkish linen brand specializing in tablecloths,
+                        napkins, and placemats. Created an immersive brand identity and e-commerce platform,
+                        seamlessly blending sophistication
+                        and functionality to elevate the essence of Bonno in the world of fine linens.
+                    </p>
+                    <div class="button-container"
+                        style="display:flex; flex-direction:column; align-items:flex-start; gap:12px;">
+                        <a class="view-project-link" data-type="link" href="./bonno.html">View Project<span
+                                class="arrow">→</span></a>
+                        <a class="view-project-link" data-type="link" target="_blank"
+                            href="https://www.figma.com/proto/uJqneE7EhAVNvhWQJR44fO/bonno-website?page-id=416%3A2&node-id=416-3&viewport=449%2C320%2C0.24&t=guXveYsEKFYOxXrp-1&scaling=scale-down&content-scaling=fixed">Try Prototype<span
+                                class="arrow">→</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line">
+                <div class="container" style="padding-top: 0; padding-bottom: 0;">
+                    <hr style="border: 0px solid #bbbbbb7e; border-top-width: 1px;">
+                </div>
+            </div>
+
+            <!-- COMPETE -->
+            <div class="work-container filterDiv uiux brand">
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slide"><img src="./pics/compete/Compete Logo.jpg" alt="Compete Logo"></div>
+                        <div class="slide"><img src="./pics/compete/Compete Packaging.jpg" alt="Compete Packaging">
+                        </div>
+                        <div class="slide"><img src="./pics/compete/Compete Cans.jpg" alt="Compete Cans"></div>
+                    </div>
+                    <button class="prev">&#10094;</button>
+                    <button class="next">&#10095;</button>
+                </div>
+                <!-- project title and details -->
+                <div class="work-text">
+                    <h3>Compete</h3>
+                    <h4>Website Design | Brand Identity Design</h4>
+                    <p>Compete, a fictional sports drink brought to life through innovative branding and website
+                        design. Designed bottle labels and a sleek homepage, seamlessly integrating form and function to
+                        embody the essence of Compete.
+                    </p>
+                    <a class="view-project-link" data-type="link" href="./compete.html">View Project<span
+                            class="arrow">→</span></a>
+                </div>
+            </div>
+
+            <div class="line">
+                <div class="container" style="padding-top: 0; padding-bottom: 0;">
+                    <hr style="border: 0px solid #bbbbbb7e; border-top-width: 1px;">
+                </div>
+            </div>
+
+            <!-- POETRY -->
+            <div class="work-container filterDiv webdevelopment">
+                <div class="slider-container">
+                    <div class="slider">
+                        <!-- <div class="slide"><img src="./pics/childhood-poetry/poetry-presentation.png"
+                                alt="Memoir of My Childhood Website Screenshot"></div> -->
+                        <div class="slide"><img src="./pics/childhood-poetry/memoir-of-my-childhood.gif"
+                                alt="Memoir of My Childhood Website Gif"></div>
+                    </div>
+                    <button class="prev" style="display: none;">&#10094;</button>
+                    <button class="next" style="display: none;">&#10095;</button>
+                </div>
+                <!-- project title and details -->
+                <div class="work-text">
+                    <h3>Memoir of My Childhood</h3>
+                    <h4>Web Development | Poetry</h4>
+                    <p>Created a website of interactive poetry consisting of words, phrases, questions, and images
+                        that remind me of my childhood.
+                        The user can move every item on the website to create their own poem.
+                    </p>
+                    <div class="button-container"
+                        style="display:flex; flex-direction:column; align-items:flex-start; gap:12px;">
+                        <a class="view-project-link" data-type="link" href="./poetry.html">View Project<span
+                                class="arrow">→</span></a>
+                        <a class="view-project-link" data-type="link" target="_blank"
+                            href="https://akalfaza.github.io/poetry-collage/">Try Website<span
+                                class="arrow">→</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line">
+                <div class="container" style="padding-top: 0; padding-bottom: 0;">
+                    <hr style="border: 0px solid #bbbbbb7e; border-top-width: 1px;">
+                </div>
+            </div>
+
+            <!-- LIMON ZINE -->
+            <div class="work-container filterDiv publication">
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slide"><img src="./pics/limon/limon-cover.jpg" alt="Compete Logo"></div>
+                        <div class="slide"><img src="./pics/limon/limon-cover2.jpg" alt="Compete Packaging"></div>
+                    </div>
+                    <button class="prev">&#10094;</button>
+                    <button class="next">&#10095;</button>
+                </div>
+                <!-- project title and details -->
+                <div class="work-text">
+                    <h3>Limon Zine</h3>
+                    <h4>Zine Design</h4>
+                    <p>Created a zine called Limon, the Turkish word for lemon, with recipes of Turkish food that
+                        are always eaten with a few drops of lemon.
+                    </p>
+                    <a class="view-project-link" data-type="link" href="./limon-zine.html">View Project<span
+                            class="arrow">→</span></a>
+                </div>
+            </div>
+
+            <div class="line">
+                <div class="container" style="padding-top: 0px; padding-bottom: 0;">
+                    <hr style="border: 0px solid #bbbbbb7e; border-top-width: 1px;">
+                </div>
+            </div>
+
+            <!-- TWO DESIGNERS TIMELINE -->
+            <div class="work-container filterDiv publication">
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slide"><img src="./pics/two-designers-timeline/2DT.jpg"
+                                alt="Two Designers Timeline Pages"></div>
+                        <div class="slide"><img src="./pics/two-designers-timeline/Cover.jpg"
+                                alt="Two Designers Timeline Cover"></div>
+                    </div>
+                    <button class="prev">&#10094;</button>
+                    <button class="next">&#10095;</button>
+                </div>
+                <!-- project title and details -->
+                <div class="work-text">
+                    <h3>Two Designers Timeline</h3>
+                    <h4>Book Design</h4>
+                    <p>Designed an accordion fold book introducing the lives and careers of two
+                        notable designers as well as major landmarks in world and art history.
+                    </p>
+                    <a class="view-project-link" data-type="link" href="./timeline.html">View Project<span
+                            class="arrow">→</span></a>
+                </div>
+            </div>
+
+            <div class="line">
+                <div class="container" style="padding-top: 0px; padding-bottom: 0;">
+                    <hr style="border: 0px solid #bbbbbb7e; border-top-width: 1px;">
+                </div>
+            </div>
+
+            <!-- HELLO -->
+            <div class="work-container filterDiv uiux">
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slide"><img src="./pics/hello/hello_design_presentation.jpg" alt="Hello Screens">
+                        </div>
+                        <div class="slide"><img src="./pics/hello/gif1.gif" alt="Hello Figma Demo">
+                        </div>
+                    </div>
+                    <button class="prev">&#10094;</button>
+                    <button class="next">&#10095;</button>
+                </div>
+                <!-- project title and details -->
+                <div class="work-text">
+                    <h3>Hello: Developer Search Engine Interface </h3>
+                    <h4>Website Design</h4>
+                    <p> Redesigned an interactive interface for the startup Hello, a search engine that is optimized
+                        for developers and technical questions. Created a prototype tailored to streamline technical
+                        inquiries,
+                        redefining the search experience for developers.
+                    </p>
+                    <div class="button-container"
+                        style="display:flex; flex-direction:column; align-items:flex-start; gap:12px;">
+                        <a class="view-project-link" data-type="link" href="./iterative-design.html">View Project<span
+                                class="arrow">→</span></a>
+                        <a class="view-project-link" data-type="link" target="_blank"
+                            href="https://akalfaza.github.io/poetry-collage/">Try Prototype<span
+                                class="arrow">→</span></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="line">
+        <div class="container" style="padding-top: 28px; padding-bottom: 0;">
+            <hr style="border: 0px solid #bbbbbb7e; border-top-width: 1px;">
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <h4 class="footer-name">Alara Kalfazade</h4>
+            <div class="footer-row">
+                <div class="footer-col">
+                    <ul class="footer-list">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#portfolio">Work</a></li>
+                        <li><a href="./about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul class="footer-list">
+                        <li><a href="./Resume.pdf" target="_blank">Resume</a></li>
+                        <li><a href="https://www.linkedin.com/in/alara-kalfazade-bba247237/"
+                                target="_blank">Linkedin</a></li>
+                        <li><a href="mailto:alarakalfazade@gmail.com" target="_blank">E-mail</a></li>
+                    </ul>
+                </div>
+            </div>
+            <h4 class="coded-by-me">Coded by me :) Google Chrome is suggested.</h4>
+        </div>
+    </div>
+
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // NAVIGATION MENU
+        var menu = document.getElementById("menu");
+
+        function opennav() {
+            menu.classList.add("mobile-open");
+            document.body.classList.add("menu-open");
+        }
+        function closenav() {
+            menu.classList.remove("mobile-open");
+            document.body.classList.remove("menu-open");
+        }
+
+
+        // FILTERING
+        filterSelection("all")
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("filterDiv");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+            }
+        }
+
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+
+        // SLIDER
+        document.querySelectorAll('.slider-container').forEach(container => {
+            const slider = container.querySelector('.slider');
+            const slides = container.querySelectorAll('.slide');
+            const prevBtn = container.querySelector('.prev');
+            const nextBtn = container.querySelector('.next');
+
+            let currentIndex = 0;
+
+            function showSlides(index) {
+                if (index >= slides.length) {
+                    currentIndex = 0;
+                } else if (index < 0) {
+                    currentIndex = slides.length - 1;
+                } else {
+                    currentIndex = index;
+                }
+                slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+            }
+
+            function nextSlide() {
+                showSlides(currentIndex + 1);
+            }
+
+            function prevSlide() {
+                showSlides(currentIndex - 1);
+            }
+
+            nextBtn.addEventListener('click', nextSlide);
+            prevBtn.addEventListener('click', prevSlide);
+
+            showSlides(currentIndex); // Initialize first slide
+        });
+
+    </script>
+
+</body>
+
+
+
+
+</html>
