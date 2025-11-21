@@ -192,8 +192,9 @@ nav .fas {
 .slider-container {
     /* flex: 1 1 400px; */
     position: relative;
-    /* width: 60%; Sets the slider width to 60% of the parent container */
-    max-width: 600px;
+    /* width: 60%; */
+    /* max-width 600px oldugunda slide img max-height 400px, max-width 800px oldugunda ise max-height 533px (oransal olarak) */
+    max-width: 800px;
     /* Maximum width for larger screens daha once 800px di*/
     overflow: hidden;
     margin: 20px auto;
@@ -223,7 +224,7 @@ nav .fas {
     width: 100%;
     /* Each slide takes up 100% of the slider container's width */
     height: auto;
-    max-height: 400px;
+    max-height: 533px;
     /* object-fit: contain; */
     display: block;
     object-fit: cover;
